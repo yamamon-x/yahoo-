@@ -1,0 +1,143 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity" >
+
+        <Button
+            android:id="@+id/buttonScan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_strongorange"
+            android:text="@string/scan"
+            android:textColor="@color/textwhite" />
+
+        <TextView
+            android:id="@+id/distanceTextLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_orange"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/distance_title"
+            android:textColor="@color/textwhite"
+            android:textSize="36sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_paleorange"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mayowan_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="わからない"
+                android:textColor="@color/textblack"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/mayowan_pic"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/img0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/mayowan_thumbnail"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/thumb0" />
+
+                <TextView
+                    android:id="@+id/mayowan_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rounded_white"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="通信できないわん!"
+                    android:textColor="@color/textblack"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_green"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sendTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="メッセージ入力してね"
+                android:textColor="@color/textwhite"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/serialSendText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_white"
+                android:bufferType="editable"
+                android:hint="例) modotte oide!(^^)"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/textblack"
+                android:textSize="20sp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/buttonSerialSend"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_orange"
+                android:text="送信!"
+                android:textColor="@color/textwhite"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
